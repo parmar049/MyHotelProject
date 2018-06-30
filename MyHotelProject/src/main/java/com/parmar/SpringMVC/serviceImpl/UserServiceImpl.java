@@ -8,7 +8,7 @@ import com.parmar.SpringMVC.dao.UserDAO;
 import com.parmar.SpringMVC.model.User;
 import com.parmar.SpringMVC.service.UserService;
 @Service
-@Transactional
+//@Transactional
 public class UserServiceImpl implements UserService{
 	@Autowired
 	private UserDAO userDAO;

@@ -14,9 +14,13 @@ public class User {
 	@Column(name="entityId")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int entityId;
+	@Column
 	private String loginId;
+	@Column
 	private String password;
+	@Column
 	private String name;
+	@Column
 	private String mobileNo;
 	
 	public int getEntityId() {

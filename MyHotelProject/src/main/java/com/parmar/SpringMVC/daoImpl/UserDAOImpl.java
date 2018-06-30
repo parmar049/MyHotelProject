@@ -20,7 +20,6 @@ public class UserDAOImpl implements UserDAO{
 		
 		return (User) sessionFactory.getCurrentSession().get(User.class, loginId);
 	}
-
 	public boolean validateUser(String loginId, String password) {
 		  List<User> userList = new ArrayList<User>();
 	        Query query = sessionFactory.getCurrentSession().createQuery("from User u where u.loginId = :login");
